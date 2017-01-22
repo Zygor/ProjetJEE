@@ -1,4 +1,4 @@
-package Hiberne;
+package fr.uvsq.datascale.hiberutil;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

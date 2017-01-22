@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
   <session-factory>
-  <property name="hibernate.connection.url">jdbc:mysql://localHost/tphibera</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localHost/tp1</property>
     <property name="connection.username">root</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
  	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -15,11 +15,18 @@
  	<property name="hibernate.hbm2ddl.auto">create</property>
  	
  	
- 	
-    <mapping class="Modele.Personne" /> 
-   	<mapping class="Modele.Info"/>
-   	<mapping class="Modele.Course"/>
-   	<mapping class="Modele.Etudiant"/>
-   	<mapping class="Modele.Adresse"/>
+ 
+    <mapping class="fr.uvsq.datasclale.modele.Adresse" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.Article"/>
+   	<mapping class="fr.uvsq.datasclale.modele.AvisClient" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.Categorie"/>
+   	<mapping class="fr.uvsq.datasclale.modele.Client" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.Commande"/>
+   	<mapping class="fr.uvsq.datasclale.modele.CoordBancaire" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.Facture"/>
+   	<mapping class="fr.uvsq.datasclale.modele.Livraison" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.Panier"/>
+   	<mapping class="fr.uvsq.datasclale.modele.Promotion" /> 
+   	<mapping class="fr.uvsq.datasclale.modele.TypeLivraison"/>
   </session-factory>
 </hibernate-configuration>
