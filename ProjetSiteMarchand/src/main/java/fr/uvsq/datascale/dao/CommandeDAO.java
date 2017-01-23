@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Commande;
+import fr.uvsq.datascale.modele.Commande;
 
 public class CommandeDAO implements CommandeHome {
 

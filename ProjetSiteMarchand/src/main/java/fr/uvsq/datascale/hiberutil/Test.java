@@ -2,7 +2,7 @@ package fr.uvsq.datascale.hiberutil;
 
 
 import fr.uvsq.datascale.dao.ClientDAO;
-import fr.uvsq.datasclale.modele.Client;
+import fr.uvsq.datascale.modele.Client;
 
 public class Test {
 

@@ -1,4 +1,4 @@
-package fr.uvsq.datasclale.modele;
+package fr.uvsq.datascale.modele;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

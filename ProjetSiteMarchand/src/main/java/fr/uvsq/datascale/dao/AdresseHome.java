@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Adresse;
+import fr.uvsq.datascale.modele.Adresse;
 
 public interface AdresseHome extends HomeDAO<Adresse> {
 	

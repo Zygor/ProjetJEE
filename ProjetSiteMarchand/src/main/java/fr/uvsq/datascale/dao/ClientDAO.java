@@ -1,8 +1,7 @@
 package fr.uvsq.datascale.dao;
 
 import fr.uvsq.datascale.hiberutil.HibernateUtil;
-import fr.uvsq.datasclale.modele.Client;
-
+import fr.uvsq.datascale.modele.Client;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

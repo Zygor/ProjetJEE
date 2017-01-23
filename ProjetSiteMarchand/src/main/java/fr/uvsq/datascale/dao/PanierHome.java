@@ -1,7 +1,7 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Client;
-import fr.uvsq.datasclale.modele.Panier;
+import fr.uvsq.datascale.modele.Client;
+import fr.uvsq.datascale.modele.Panier;
 
 public interface PanierHome extends HomeDAO<Panier> {
 

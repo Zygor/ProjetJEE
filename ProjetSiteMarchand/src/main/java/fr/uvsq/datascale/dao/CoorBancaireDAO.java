@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.CoordBancaire;
+import fr.uvsq.datascale.modele.CoordBancaire;
 
 public class CoorBancaireDAO implements CoorBancaireHome {
 

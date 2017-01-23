@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Categorie;
+import fr.uvsq.datascale.modele.Categorie;
 
 public interface CategorieHome extends HomeDAO<Categorie> {
 

@@ -1,7 +1,7 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Article;
-import fr.uvsq.datasclale.modele.Categorie;
+import fr.uvsq.datascale.modele.Article;
+import fr.uvsq.datascale.modele.Categorie;
 
 public interface ArticleHome extends HomeDAO<Article> {
 

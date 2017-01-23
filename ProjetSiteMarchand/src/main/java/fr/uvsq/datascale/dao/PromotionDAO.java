@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.Promotion;
+import fr.uvsq.datascale.modele.Promotion;
 
 public class PromotionDAO implements PromotionHome {
 

@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.TypeLivraison;
+import fr.uvsq.datascale.modele.TypeLivraison;
 
 public class TypeLivraisonDAO implements TypeLivraisonHome {
 

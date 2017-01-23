@@ -1,6 +1,6 @@
 package fr.uvsq.datascale.dao;
 
-import fr.uvsq.datasclale.modele.AvisClient;
+import fr.uvsq.datascale.modele.AvisClient;
 
 public class AvisClientDAO implements AvisClientHome {
 
