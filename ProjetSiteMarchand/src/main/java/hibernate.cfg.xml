@@ -16,17 +16,17 @@
  	
  	
  
-    <mapping class="fr.uvsq.datasclale.modele.Adresse" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.Article"/>
-   	<mapping class="fr.uvsq.datasclale.modele.AvisClient" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.Categorie"/>
-   	<mapping class="fr.uvsq.datasclale.modele.Client" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.Commande"/>
-   	<mapping class="fr.uvsq.datasclale.modele.CoordBancaire" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.Facture"/>
-   	<mapping class="fr.uvsq.datasclale.modele.Livraison" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.Panier"/>
-   	<mapping class="fr.uvsq.datasclale.modele.Promotion" /> 
-   	<mapping class="fr.uvsq.datasclale.modele.TypeLivraison"/>
+    <mapping class="fr.uvsq.datascale.modele.Adresse" /> 
+   	<mapping class="fr.uvsq.datascale.modele.Article"/>
+   	<mapping class="fr.uvsq.datascale.modele.AvisClient" /> 
+   	<mapping class="fr.uvsq.datascale.modele.Categorie"/>
+   	<mapping class="fr.uvsq.datascale.modele.Client" /> 
+   	<mapping class="fr.uvsq.datascale.modele.Commande"/>
+   	<mapping class="fr.uvsq.datascale.modele.CoordBancaire" /> 
+   	<mapping class="fr.uvsq.datascale.modele.Facture"/>
+   	<mapping class="fr.uvsq.datascale.modele.Livraison" /> 
+   	<mapping class="fr.uvsq.datascale.modele.Panier"/>
+   	<mapping class="fr.uvsq.datascale.modele.Promotion" /> 
+   	<mapping class="fr.uvsq.datascale.modele.TypeLivraison"/>
   </session-factory>
 </hibernate-configuration>
