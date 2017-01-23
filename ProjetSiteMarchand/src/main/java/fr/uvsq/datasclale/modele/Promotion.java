@@ -1,11 +1,13 @@
 package fr.uvsq.datasclale.modele;
 
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -22,6 +24,8 @@ public class Promotion {
     private Date dateFin;
     @Column
     private int remise;
+    @OneToMany
+    private Set<Article> articles;
 
     public int getIdPromo() {
 	return idPromo;
@@ -55,12 +59,21 @@ public class Promotion {
 	this.remise = remise;
     }
 
-    public Promotion(int idPromo, Date dateDebut, Date dateFin, int remise) {
+    public Set<Article> getArticles() {
+	return articles;
+    }
+
+    public void setArticles(Set<Article> articles) {
+	this.articles = articles;
+    }
+
+    public Promotion(int idPromo, Date dateDebut, Date dateFin, int remise, Set<Article> articles) {
 	super();
 	this.idPromo = idPromo;
 	this.dateDebut = dateDebut;
 	this.dateFin = dateFin;
 	this.remise = remise;
+	this.articles = articles;
     }
 
     public Promotion() {
