@@ -1,5 +1,6 @@
 package fr.uvsq.datascale.modele;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -10,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "AvisClients")
-public class AvisClient {
+public class AvisClient implements Serializable {
 
     @Id
     @OneToOne
