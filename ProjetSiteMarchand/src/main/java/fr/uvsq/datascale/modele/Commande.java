@@ -33,7 +33,7 @@ public class Commande {
     @OneToOne
     private Livraison livraison;
     @OneToMany(cascade = CascadeType.ALL)
-    private Set<CoordBancaire> listeArticles;
+    private Set<Article> listeArticles;
 
     public int getIdCommande() {
 	return idCommande;
@@ -75,16 +75,16 @@ public class Commande {
 	this.livraison = livraison;
     }
 
-    public Set<CoordBancaire> getListeArticles() {
+    public Set<Article> getListeArticles() {
 	return listeArticles;
     }
 
-    public void setListeArticles(Set<CoordBancaire> listeArticles) {
+    public void setListeArticles(Set<Article> listeArticles) {
 	this.listeArticles = listeArticles;
     }
 
     public Commande(int idCommande, Date dateCommande, Client client, Facture factureCommande, Livraison livraison,
-	    Set<CoordBancaire> listeArticles) {
+	    Set<Article> listeArticles) {
 	super();
 	this.idCommande = idCommande;
 	this.dateCommande = dateCommande;

@@ -1,9 +1,13 @@
 package fr.uvsq.datascale.modele;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -18,8 +22,18 @@ public class Panier {
     private int nbArticle;
     @Column
     private float prixTotal;
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<Article> ensembleArticles;
 
-    public int getIdPannier() {
+    public Set<Article> getEnsembleArticles() {
+		return ensembleArticles;
+	}
+
+	public void setEnsembleArticles(Set<Article> ensembleArticles) {
+		this.ensembleArticles = ensembleArticles;
+	}
+
+	public int getIdPannier() {
 	return idPannier;
     }
 
