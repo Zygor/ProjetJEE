@@ -24,4 +24,50 @@ public class Livraison {
     private String statutLivraison;
     @OneToOne(cascade = CascadeType.ALL)
     private TypeLivraison typeLivraison;
+
+    public int getIdLivraison() {
+	return idLivraison;
+    }
+
+    public void setIdLivraison(int idLivraison) {
+	this.idLivraison = idLivraison;
+    }
+
+    public Date getDatePrevue() {
+	return datePrevue;
+    }
+
+    public void setDatePrevue(Date datePrevue) {
+	this.datePrevue = datePrevue;
+    }
+
+    public String getStatutLivraison() {
+	return statutLivraison;
+    }
+
+    public void setStatutLivraison(String statutLivraison) {
+	this.statutLivraison = statutLivraison;
+    }
+
+    public TypeLivraison getTypeLivraison() {
+	return typeLivraison;
+    }
+
+    public void setTypeLivraison(TypeLivraison typeLivraison) {
+	this.typeLivraison = typeLivraison;
+    }
+
+    public Livraison(int idLivraison, Date datePrevue, String statutLivraison, TypeLivraison typeLivraison) {
+	super();
+	this.idLivraison = idLivraison;
+	this.datePrevue = datePrevue;
+	this.statutLivraison = statutLivraison;
+	this.typeLivraison = typeLivraison;
+    }
+
+    public Livraison() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
 }

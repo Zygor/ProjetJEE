@@ -27,4 +27,58 @@ public class Promotion {
     @OneToMany
     private Set<Article> articles;
 
+    public int getIdPromo() {
+	return idPromo;
+    }
+
+    public void setIdPromo(int idPromo) {
+	this.idPromo = idPromo;
+    }
+
+    public Date getDateDebut() {
+	return dateDebut;
+    }
+
+    public void setDateDebut(Date dateDebut) {
+	this.dateDebut = dateDebut;
+    }
+
+    public Date getDateFin() {
+	return dateFin;
+    }
+
+    public void setDateFin(Date dateFin) {
+	this.dateFin = dateFin;
+    }
+
+    public int getRemise() {
+	return remise;
+    }
+
+    public void setRemise(int remise) {
+	this.remise = remise;
+    }
+
+    public Set<Article> getArticles() {
+	return articles;
+    }
+
+    public void setArticles(Set<Article> articles) {
+	this.articles = articles;
+    }
+
+    public Promotion(int idPromo, Date dateDebut, Date dateFin, int remise, Set<Article> articles) {
+	super();
+	this.idPromo = idPromo;
+	this.dateDebut = dateDebut;
+	this.dateFin = dateFin;
+	this.remise = remise;
+	this.articles = articles;
+    }
+
+    public Promotion() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
+
 }
