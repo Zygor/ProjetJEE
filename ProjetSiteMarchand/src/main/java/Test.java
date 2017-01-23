@@ -1,4 +1,3 @@
-package fr.uvsq.datascale.hiberutil;
 
 import fr.uvsq.datascale.dao.ClientDAO;
 import fr.uvsq.datasclale.modele.Client;
