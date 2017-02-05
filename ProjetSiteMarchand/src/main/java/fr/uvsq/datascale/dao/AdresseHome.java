@@ -8,7 +8,7 @@ public interface AdresseHome extends HomeDAO<Adresse> {
 	
 	boolean delete (int id) ;
 	
-	boolean update (Adresse amodifier) ;
+	boolean update (int Adr, Adresse nouvelle) ;
 	
 	Adresse findByld (int id) ;
 

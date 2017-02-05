@@ -1,5 +1,7 @@
 package fr.uvsq.datascale.dao;
 
+import java.util.List;
+
 import fr.uvsq.datascale.modele.Article;
 import fr.uvsq.datascale.modele.Categorie;
 
@@ -13,8 +15,8 @@ public interface ArticleHome extends HomeDAO<Article> {
 
 	Article findByld (int id) ;
 	
-	Article findByKeyWord (String KeyWord) ;
+	List<Article> findByKeyWord (String KeyWord) ;
 	
-	Article findByCategorie (Categorie cg) ;
+	List<Article> findByCategorie (Categorie cg) ;
 	
 }

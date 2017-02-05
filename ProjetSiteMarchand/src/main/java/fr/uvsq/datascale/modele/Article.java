@@ -31,7 +31,7 @@ public class Article {
     private boolean disponibilite;
     @ManyToOne(fetch = FetchType.LAZY)
     private Promotion promotion;
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Categorie categorie;
     @OneToMany(cascade = CascadeType.ALL)
     private Set<AvisClient> avisClients;

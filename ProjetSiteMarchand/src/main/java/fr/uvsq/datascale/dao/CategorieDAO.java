@@ -1,12 +1,29 @@
 package fr.uvsq.datascale.dao;
 
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import fr.uvsq.datascale.hiberutil.HibernateUtil;
 import fr.uvsq.datascale.modele.Categorie;
 
 public class CategorieDAO implements CategorieHome {
 
 	@Override
 	public void insert(Categorie nouveau) {
-		// TODO Auto-generated method stub
+		Transaction tx = null ;
+
+		Session session =  HibernateUtil.currentSession() ;
+		try {
+
+			tx =session.beginTransaction() ;
+			session.save(nouveau) ;
+			tx.commit();
+
+		} catch (HibernateException e) {
+
+			tx.rollback();
+		}
 
 	}
 
