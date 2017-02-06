@@ -10,6 +10,7 @@ import org.hibernate.Transaction;
 
 import fr.uvsq.datascale.hiberutil.HibernateUtil;
 import fr.uvsq.datascale.modele.Article;
+
 import fr.uvsq.datascale.modele.Categorie;
 
 
@@ -35,8 +36,23 @@ public class ArticleDAO implements ArticleHome {
 
 	@Override
 	public boolean delete(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		try {
+			Transaction tx = null ;
+
+			Session session =  HibernateUtil.currentSession() ;
+			Article art = new Article () ;
+			art = findByld(id);
+			tx =session.beginTransaction() ;
+			session.delete(art);
+			session.flush() ;
+			tx.commit();
+			return true;
+			
+		}catch (Exception e) {
+
+			System.out.println("Article non trouvé");
+			return false ;
+		}
 	}
 
 	@Override
@@ -48,8 +64,28 @@ public class ArticleDAO implements ArticleHome {
 	@Override
 	public Article findByld(int id) {
 
+		Transaction tx = null ;
 
-		return null ;
+		Session session =  HibernateUtil.currentSession() ;
+
+		Article art = new Article () ;
+		try {
+
+			tx =session.beginTransaction() ;
+			art = (Article) session.get(Article.class,id);
+			//session.flush() ;
+			tx.commit();
+
+		} catch (Exception e) {
+			//e.printStackTrace();
+			//tx.rollback();
+			System.out.println("Article non trouvéeeee");
+		} /*finally {
+			if (session != null && session.isOpen()) {
+				//session.close();
+			}
+		}*/
+		return art;
 	}
 
 

@@ -33,7 +33,8 @@ public class Client {
     private int pointDeFidelite;
     @Column
     private String gender;
-    @OneToOne(cascade = CascadeType.ALL)
+    
+   @OneToOne(cascade = CascadeType.ALL)
     private Panier panierClient;
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Adresse> adressesClient;
@@ -108,7 +109,7 @@ public class Client {
 	this.gender = gender;
     }
 
-    public Panier getPanierClient() {
+   public Panier getPanierClient() {
 	return panierClient;
     }
 
@@ -141,7 +142,7 @@ public class Client {
     }
 
     public Client(int idClient, String nom, String prenom, String mail, String password, int telephone,
-	    int pointDeFidelite, String gender, Panier panierClient, Set<Adresse> adressesClient,
+	    int pointDeFidelite, String gender,Panier panierClient, Set<Adresse> adressesClient,
 	    Set<CoordBancaire> coordBancairesClient, Set<Commande> commandesClient) {
 	super();
 	this.idClient = idClient;
